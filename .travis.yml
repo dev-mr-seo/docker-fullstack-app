@@ -23,6 +23,7 @@ after_success:
   - docker push devmrseo/docker-nginx
 
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   region: "ap-northeast-2"
   app: "docker-fullstack-app"
@@ -32,5 +33,7 @@ deploy:
   on:
     branch: master
 
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  access_key_id:
+    secure: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_ACCESS_KEY

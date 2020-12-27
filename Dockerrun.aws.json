@@ -10,7 +10,7 @@
     },
     {
       "name": "backend",
-      "imgae": "devmrseo/docker-backend",
+      "image": "devmrseo/docker-backend",
       "hostname": "backend",
       "essential": false,
       "memory": 128
