@@ -31,4 +31,3 @@ services:
       MYSQL_ROOT_PASSWORD: pass1643
       MYSQL_DATABASE: myapp
       MYSQL_PORT: 3306
-
