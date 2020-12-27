@@ -1,4 +1,4 @@
-FROM node:lst-alpine as builder
+FROM node:lts-alpine as builder
 
 WORKDIR /app
 
